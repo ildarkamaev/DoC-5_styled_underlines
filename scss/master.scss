@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration-color: #44c0db;
+}
+
+.container{
+    max-width: calc(100vw - 4rem);
+    width: 40rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    h1{
+        margin-bottom: 1.5rem;
+        text-decoration: underline;
+        // määrab teksti-aluse joone paksuse
+        text-decoration-thickness: 1rem;
+        // määrab joone värvi
+        text-decoration-color: #44c0db;
+        // määrab kauguse algpunktist x-teljel
+        text-underline-offset: -4px;
+        // määrab kas joon katkeb kui puutub kokku tähtede väljaulatuvate osadega v mitte
+        text-decoration-skip-ink: none;
+    }
+    h2{
+        @extend h1;
+        margin-top: 1rem;
+    }
+    p{
+        text-align: justify;
+    }
+    a{
+        text-decoration-color: #b0f566;
+        text-decoration-thickness: .3rem;
+        text-decoration-color: #44c0db;
+        text-underline-offset: -1px;
+        text-decoration-skip-ink: none;
+    }
+}
